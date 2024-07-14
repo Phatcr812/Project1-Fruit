@@ -58,7 +58,8 @@ public class UserDAO extends EduSysDAO<User, String>{
         if (list.isEmpty()) {
             return null;
         }
-        return list.get(0);    }
+        return list.get(0);    
+    }
 
     @Override
     public List<User> selectBySql(String sql, Object... args) {

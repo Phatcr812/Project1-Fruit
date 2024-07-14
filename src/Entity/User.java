@@ -100,8 +100,10 @@ public class User {
 
     @Override
     public String toString() {
-        return this.name;
+        return "User{" + "id=" + id + ", password=" + password + ", name=" + name + ", phone=" + phone + ", email=" + email + ", role=" + role + ", createAt=" + createAt + ", updateAt=" + updateAt + '}';
     }
+
+    
     
     
 }
