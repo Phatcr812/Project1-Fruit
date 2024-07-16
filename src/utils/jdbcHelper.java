@@ -9,7 +9,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+import java.sql.Connection;
 /**
  *
  * @author PC
@@ -51,6 +51,8 @@ public class jdbcHelper {
         }
         return pstmt;
     }
+    
+
     
     /**
      * Thực hiện câu lệnh SQL thao tác (INSERT, UPDATE, DELETE) hoặc thủ tục lưu thao tác dữ liệu

@@ -13,16 +13,19 @@ public class Address {
     private String city;
     private String ward;
     private String street;
-
+    private boolean isDefault;
     public Address() {
     }
 
-    public Address(String id, String city, String ward, String street) {
+    public Address(String id, String city, String ward, String street, boolean isDefault) {
         this.id = id;
         this.city = city;
         this.ward = ward;
         this.street = street;
+        this.isDefault = isDefault;
     }
+
+    
 
     public String getId() {
         return id;
@@ -56,6 +59,15 @@ public class Address {
         this.street = street;
     }
 
+    public boolean isIsDefault() {
+        return isDefault;
+    }
+
+    public void setIsDefault(boolean isDefault) {
+        this.isDefault = isDefault;
+    }
+
+    
     @Override
     public String toString() {
         return this.city + ", " + this.ward + ", " + this.street;

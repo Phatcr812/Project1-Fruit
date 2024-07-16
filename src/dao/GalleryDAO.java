@@ -90,4 +90,5 @@ public class GalleryDAO extends EduSysDAO<Gallery, Integer>{
         List<Gallery> list = this.selectBySql(sql, product_id);
         return list.size() > 0 ? list : null;
     }
+    
 }
